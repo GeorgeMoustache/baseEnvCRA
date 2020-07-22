@@ -18,14 +18,16 @@
   },
   "devDependencies": {
     "express": "^4.17.1",
-    "express-mockjs": "^0.4.9"
+    "express-mockjs": "^0.4.9",
+    "react-app-rewire-aliases": "^0.2.0",
+    "react-app-rewired": "^2.1.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "api": "nodemon -e json -w api-interface api-interface/app.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": "react-app"
