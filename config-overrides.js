@@ -12,6 +12,7 @@ module.exports = function override(config, env) {
     '@utils': path.resolve(__dirname, `${paths.appSrc}/utils/`),
     '@reducers': path.resolve(__dirname, `${paths.appSrc}/reducers/`),
     '@actions': path.resolve(__dirname, `${paths.appSrc}/actions/`),
+    '@api': path.resolve(__dirname, `${paths.appSrc}/api/`)
 	})(config, env);
   return config;
 }
