@@ -5,6 +5,8 @@ const path = require('path');
 /* config-overrides.js */
 module.exports = function override(config, env) {
 	config = rewireAliases.aliasesOptions({
+    '@': path.resolve(__dirname, `${paths.appSrc}/`),
+    '@store': path.resolve(__dirname, `${paths.appSrc}/store`),
     '@router': path.resolve(__dirname, `${paths.appSrc}/router/`),
     '@components': path.resolve(__dirname, `${paths.appSrc}/components/`),
     '@assets': path.resolve(__dirname, `${paths.appSrc}/assets/`),

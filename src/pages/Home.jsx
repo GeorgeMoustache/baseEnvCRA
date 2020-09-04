@@ -1,7 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 
+const StyleHome = styled.div`
+  color: ${({theme}) => theme.color.black};
+`
 const Home = () => {
-  return <div>HomePage</div>
+  return <StyleHome>HomePage</StyleHome>
 }
 
 export default Home

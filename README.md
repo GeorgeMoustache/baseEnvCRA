@@ -21,6 +21,7 @@
 3.路由入口判定多項行為，如未於配置表設定元件導向 404 頁面，及取得會員資料進 redux ... 等，可自行依需求配置
 
 ### redux
-1.路徑 /reducers/index.js 配置 store 基本資訊，於 index.jsx 中引入使用
-2.預先搭載 loading reducer
-3.配合路徑 /actions
+1.將 store 模組化，方便於非 component 中使用，檔案位於路徑 /store/index.js
+2.路徑 /reducers/index.js 配置 reducer 基本資訊，於 /store/index.jsx 中引入使用
+3.預先搭載 loading reducer
+4.配合路徑 /actions
