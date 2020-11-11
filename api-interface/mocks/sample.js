@@ -4,7 +4,9 @@
  * @url sample
  */
 
-module.exports = (req) => {
+module.exports = ({ method, query }) => {
+  console.log('method=>', method)
+  console.log('query=>', query)
   return {
     code: 0,
     message: "成功",

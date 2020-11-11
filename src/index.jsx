@@ -6,11 +6,13 @@ import '@assets/styles/reset.css'
 import { ThemeProvider } from 'styled-components'
 import theme from '@utils/theme'
 import App from './App'
+import Loading from '@components/Loading/'
 
 ReactDOM.render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
       <App />
+      <Loading />
     </ThemeProvider>
   </Provider>,
   document.getElementById('root'),
